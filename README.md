@@ -5,7 +5,7 @@ Android-first starter for the paycheck-first budgeting app.
 Project notes:
 
 - [Changelog](CHANGELOG.md)
-- [To Do](TODO.md)
+  
 
 ## What is in this first version
 
@@ -50,7 +50,7 @@ Project notes:
 
 Open this folder in Android Studio:
 
-`C:\Users\AlexB\Documents\Goblin Accountant`
+`C:\xxxxx\xxxx\xxxxxxxxx\Goblin Accountant`
 
 Android Studio will sync the Gradle project, download Android dependencies if needed, and let you run the app on an emulator or connected Android device.
 
