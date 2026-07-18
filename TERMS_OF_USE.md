@@ -1,4 +1,4 @@
-# Paycheck First Terms of Use and Financial Disclaimer
+Paycheck First Terms of Use and Financial Disclaimer
 
 **Effective date:** [LAUNCH DATE]
 
@@ -8,7 +8,7 @@ Questions about these terms may be sent to **[SUPPORT EMAIL OR PUBLIC CONTACT FO
 
 ## Purpose of the app
 
-Paycheck First is a personal organization, budgeting, and work-tracking tool. It helps users record income, work time, tips, bills, debts, and payment activity and produces estimates based on information supplied by the user.
+Paycheck First is a personal organization, budgeting, work-tracking, and small-business job-management tool. It helps users record income, work time, tips, bills, debts, quotes, jobs, materials, expenses, worker assignments, wage or contractor payments, owner draws, and payment activity and produces estimates based on information supplied by the user.
 
 ## Estimates, not professional advice
 
@@ -21,6 +21,8 @@ Users should verify important decisions with pay statements, employers, lenders,
 ## Work tracking
 
 Work Tracker records are personal estimates and are not an employer-approved timecard, payroll record, or legal determination of hours worked.
+
+Business Suite wage, contractor-payment, owner-pay, payroll-period, tax, profitability, inventory, and receipt records are user-maintained planning tools. The app does not run payroll, issue tax forms, determine worker classification, create a legally sufficient contract, or replace accounting, payroll, employment, or tax professionals.
 
 Overtime eligibility and calculation rules vary by jurisdiction, employer, occupation, workweek, and agreement. Users are responsible for confirming applicable overtime and break rules.
 
