@@ -1,4 +1,4 @@
-# Security and diagnostics
+Security and diagnostics
 
 Paycheck First stores financial and work data locally using AES-256-GCM encryption with a device-bound Android Keystore key.
 
@@ -15,7 +15,9 @@ Paycheck First stores financial and work data locally using AES-256-GCM encrypti
 - The launcher activity is the only exported application component and has no browsable deep links.
 - The home-screen widget receiver is explicitly non-exported.
 - Widget and notification actions use explicit, immutable `PendingIntent` instances.
-- The app declares no internet permission, service, or content provider.
+- The app declares internet access for internal map tiles and address lookup. Financial records, payroll records, receipts, and backlog/source files are not uploaded to the developer.
+- The app does not request device-location permission; maps use user-entered job addresses.
+- Receipt and inventory-document text recognition runs on device, and compressed source images remain in app-private storage.
 - A build-time component-security check protects these invariants and requires review before adding network access or deep links.
 
 ## Planned v2 export and transfer
