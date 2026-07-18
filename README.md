@@ -1,11 +1,11 @@
-﻿# Paycheck First
+Paycheck First
 
-Android-first starter for the paycheck-first budgeting app.
+Local Android application for paycheck-first budgeting, work tracking, and small-business job management.
 
 Project notes:
 
 - [Changelog](CHANGELOG.md)
-  
+
 
 ## What is in this first version
 
@@ -14,13 +14,16 @@ Project notes:
 - Home dashboard shows paycheck inflow, recommended bill/debt outflow, Food/Gas survival cash, and discretionary money left.
 - Home dashboard tracks bill payments due/expected this month and uses green, amber, or red to show on-track, warning, or behind status.
 - Status colors are used across cash flow, checklist urgency, debt interest risk, and locked/private income states.
-- Separate sections for Income, Bills, Debts, and Weekly Checklist.
+- Ten primary sections: Home, Income, Bills, Debts, Checklist, Settings, Taxes, Business Suite, Summary, and FAQ/Contact Us.
+- Business Suite with connected Jobs, workers, wage records, payroll timing, maps, calendars, materials, receipts, and profitability tools.
+- Job flow from quote through scheduling, active work, completion, payment, and ReWork without re-entry.
+- Employee, subcontractor, and owner pay displays driven by Jobs, with local payment history and Same Day, Weekly, or Per Job timing.
 - Income estimator for hourly or salary pay, overtime, pay frequency, state, deductions, pre-tax or post-tax retirement, post-tax savings, benefits, and extra withholding.
 - Income setup stays hidden behind an Add/Edit income button so the page opens as a clean summary first.
 - Income dashboard has collapsible breakdowns for income, taxes, benefits/insurance, retirement, and savings with paycheck, monthly, and annual amounts.
 - Income dashboard has PIN privacy-gate code for masking money values, currently disabled during active development.
 - Active tax-year configuration layer for federal brackets, standard deduction, FICA rates, and Social Security wage base.
-- State tax layer currently handles no-earned-income-tax states exactly and uses configured progressive brackets for Minnesota and Wisconsin.
+- State tax layer contains simplified 2026 rules for all 50 states and supports filing-status and self-employment planning scenarios with explicit limitations.
 - Actual take-home pay override that always becomes the budget income when entered.
 - Bill entry and editing with name, category, monthly minimum, due day, and payment schedule.
 - Manual bills default to weekly payments to smooth cash flow, while subscriptions default to monthly payments.
@@ -50,14 +53,14 @@ Project notes:
 
 Open this folder in Android Studio:
 
-`C:\xxxxx\xxxx\xxxxxxxxx\Goblin Accountant`
+`C:/xxxx/xxxxxxx/xxxx.GoblinAccountant`
 
 Android Studio will sync the Gradle project, download Android dependencies if needed, and let you run the app on an emulator or connected Android device.
 
 ## Next product steps
 
-1. Persist data locally with Room or DataStore.
-2. Add first-time setup screens.
-3. Add notifications for Monday, Wednesday, and payday.
-4. Add debt payoff details.
-5. Add optional credit utilization recommendations.
+1. Finish Wages Taxes and Draws.
+2. Continue the remaining Business Suite modules.
+3. Add first-time setup screens.
+4. Complete private alpha testing and persistence edge-case coverage.
+5. Add encrypted export/import in a later version.
