@@ -1,4 +1,46 @@
-# Changelog
+Changelog
+
+## 2026-07-17
+
+### Planning and navigation
+
+- Expanded the main navigation to Home, Income, Bills, Debts, Checklist, Settings, Taxes, Business Suite, Summary, and FAQ/Contact Us in a two-row layout.
+- Added rolling four-week income defaults, weekly hour comparisons, work-shift controls, business cash-flow summaries, and clearer ahead/past-due information on Home.
+- Added Conserve Cash, Make Minimums, Recommended, and Aggressive Payoff planning modes.
+- Added debt payoff comparisons and connected elected Bills payments to debt payoff calculations.
+- Replaced typed checklist overrides with Override and Skip actions, including cash-needed input, due-date/buffer consequences, safer alternatives, and optional-subscription relief choices.
+- Added Follow Phone, Light, and Dark appearance modes.
+
+### Taxes
+
+- Moved tax planning out of Income into a dedicated Taxes section.
+- Added 2026 income / 2027 filing-year labeling, filing-status selection, self-employment scenarios, all-state estimates, and repeated professional-review warnings.
+- Connected Business Suite profit and deduction information to tax scenarios while retaining simplified-estimate limitations.
+
+### Business Suite and Jobs
+
+- Added a local-first Business Suite dashboard using only received and committed work in revenue projections.
+- Built the Jobs flow from Quotes through Accepted, Scheduled, Active, Completed, Payment, and ReWork without re-entering the job.
+- Added quote sorting, comments, cancellation/restoration, scheduling, internal calendar, optional device-calendar export, crew assignment, live hours/pay, job completion categories, and structured ReWork reasons.
+- Added an internal business map with status pins and optional external maps handoff; the app does not request device-location permission.
+- Added inventory replenishment, structured job-material requirements, on-device receipt/document text recognition, checklist-based line inclusion, and compressed internal receipt storage.
+- Added plain-language job profitability and process-improvement guidance based on expected versus actual labor, material, payment, and ReWork results.
+- Added existing Scheduled, Active, Completed, and mapped-job imports marked as started before Paycheck First.
+
+### Wages
+
+- Replaced the redundant Contracts module with a Wages module.
+- Added Wages summaries for amounts due, estimated payroll taxes, and owner draws.
+- Added Employee and Subcontractor due lists driven by Jobs, with full pay, partial pay, overpayment warnings, future credits, bonuses, and additional contractor payments.
+- Added Owner hours, draws, effective hourly rate, pay due, full/partial pay, and a red Skip flow that preserves hours for later draw treatment.
+- Added Same Day, Weekly, and Per Job payroll timing assignments that control when Job work appears as payable across Wages.
+- Persisted worker timing and wage-payment records in encrypted local storage.
+
+### Verification and privacy
+
+- Added focused tests for Same Day, Weekly, and Per Job due timing.
+- Debug and release compilation, unit tests, sensitive-logging checks, and component-security checks pass.
+- App source, backlog, and internal documentation remain local; no source or backlog was uploaded to GitHub.
 
 ## 2026-07-16
 
