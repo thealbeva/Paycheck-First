@@ -1,4 +1,4 @@
-# Paycheck First Privacy Policy
+Paycheck First Privacy Policy
 
 **Effective date:** [LAUNCH DATE]
 
@@ -19,6 +19,9 @@ Users may enter or generate information including:
 - Bills, due dates, payment schedules, and payment history
 - Debts, balances, interest rates, minimum payments, and payoff estimates
 - Food, fuel, and other budgeting amounts
+- Business customers, job addresses, quotes, schedules, job status, comments, materials, inventory, expenses, and payments
+- Worker names, roles, pay settings, assigned hours, wage or contractor-payment records, owner pay, and owner draws
+- Receipt or inventory-document images and on-device extracted text selected by the user
 - App security and preference settings
 
 This information is used only to provide the app's budgeting, work-tracking, calculation, reminder, and planning features.
@@ -45,7 +48,13 @@ Android controls notification permission and lock-screen presentation. Users may
 
 ## Location
 
-The current version does not request or use device location. Automatic workplace geofencing is a possible future feature and is currently disabled. If location features are introduced, they will require explicit permission and an updated disclosure before use.
+The current version does not request or use the device's live location. Users may choose to save a job address, place that address on the internal business map, or open it in an installed maps app. Address lookup requires internet access and may send the entered address to the map or geocoding provider; it does not transmit the user's financial records to us. Automatic workplace geofencing remains disabled and would require explicit location permission and updated disclosures before use.
+
+## Camera, documents, calendars, and maps
+
+Users may choose a receipt/document image or use the camera for on-device text recognition. Selected images, extracted text, and confirmed business lines are stored locally in encrypted app data or compressed app-private storage. The app does not upload those documents to us.
+
+Calendar and external-map actions are user initiated. The app opens the device's calendar or maps interface with the selected job details so the user can review the action. The receiving app is governed by its own privacy practices.
 
 ## Analytics, advertising, logs, and crash reports
 
