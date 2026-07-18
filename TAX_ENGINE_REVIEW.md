@@ -1,6 +1,6 @@
-# 2026 Tax Engine Review
+2026 Tax Engine Review
 
-Review date: 2026-07-14
+Review date: 2026-07-17
 
 ## Conclusion
 
@@ -46,9 +46,9 @@ All 50 state entries were compared with the published 2026 single-filer rate tab
 
 This verifies statutory rates and bracket boundaries only. It does not make the calculated state amount equivalent to a completed state return or an employer's withholding calculation because the simplified engine still omits many state deductions, exemptions, credits, recapture rules, and local taxes.
 
-### Filing status is fixed to single
+### Filing-status scenarios are now available but remain simplified
 
-The app does not collect filing status and calculates federal and state estimates using single-filer assumptions. It cannot accurately estimate married filing jointly, married filing separately, head of household, or qualifying surviving spouse scenarios.
+The app now collects filing status and supports federal planning scenarios including head of household and self-employment income. This removes the previous single-filer-only interface limitation, but it does not make the estimate equivalent to a filed return. State rules remain simplified and may not vary deductions, exemptions, credits, or brackets correctly for every filing status.
 
 ### Paycheck withholding is not the same as annual tax liability
 
@@ -92,7 +92,7 @@ Each supported state needs tests at multiple income levels, including bracket bo
 
 ### Required inputs
 
-- Filing status
+- Filing status (implemented for federal planning; state-specific treatment still requires expansion)
 - Dependents or applicable exemption count
 - Pay frequency
 - W-4 adjustments or a clearly labeled simplified mode
@@ -132,7 +132,8 @@ The app should distinguish:
 Until the rebuild is complete:
 
 - Label results as rough estimates.
-- State that calculations assume a single filer.
+- State that filing-status scenarios remain simplified and that state-specific treatment may be incomplete.
+- Keep 2026 income / 2027 filing-year labeling visible.
 - State that state deductions, credits, local taxes, and special rules may be omitted.
 - Continue prioritizing an entered actual take-home paycheck over calculated income.
 - Do not claim the result predicts the user's exact paycheck or tax liability.
