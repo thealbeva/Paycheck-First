@@ -1,4 +1,38 @@
-Changelog
+# Changelog
+
+## 2026-07-18
+
+### Wages completed
+
+- Marked Wages Taxes as a grey Future feature and relabeled the landing-page payroll-tax figure as preliminary.
+- Added a persistent Owner Draws ledger with total draws, dated history, notes, and automatic allocation against skipped owner pay.
+- Kept owner draws separate from employee payroll while updating owner effective hourly rate and Wages totals.
+
+### Payments
+
+- Added a Payments hub with Incoming, Outgoing, Net Flow, and Pending totals sourced from Jobs, wages, draws, customer payments, and business expenses.
+- Removed the redundant Record Payment button so customer transactions remain attached to Jobs, Deposits, and Refunds.
+- Added Create Invoice with an active-job dropdown, job/payment details, invoice-specific dates/terms/notes, persistent invoice records, and local PDF export through Android's Save/Share menu.
+- Added a secure non-exported FileProvider for temporary invoice PDF sharing and visually checked the invoice layout, correcting clipped money columns and long-text handling.
+- Added deposit requirements, full and partial deposits, deposit refunds, deposit totals, and shared Job/invoice balance updates.
+- Added Outstanding Invoices with total outstanding, due-date sorting, paid removal, and automatic handoff to overdue status.
+- Added Overdue Payments with total/count summaries and sorting by oldest due date or largest remaining balance.
+- Added Refunds with totals due/issued, full and partial customer refunds, over-refund protection, and automatic removal after the credit is settled.
+
+### Expenses
+
+- Added an Expenses hub with Total, Job-Related, General Business, and Recurring totals.
+- Added manual expenses with amount, date, approved category, vendor, notes, optional Job, optional unclaimed receipt, and one-time/recurring status.
+- Added a separate job additional-expense cost so job-linked expenses affect profitability without being mislabeled as materials.
+- Added a read-only Recurring Expenses view with total recurring cost and confirmation-based removal that preserves historical transactions.
+- Added a four-column Receipts library using generic receipt tiles, `yyyy.MM.dd` dates, totals, sorting, vendor/category/job/link/date filters, and compressed-image/detail viewing without separate thumbnail files.
+- Added a derived Vendors view with vendor totals, transaction counts, recent dates, categories, and expense/receipt history while avoiding linked-receipt double counting.
+- Added two-across Categories buttons with live totals and drill-downs for vendor, date, amount, Job, receipt, and notes.
+
+### Verification and privacy
+
+- Debug and release compilation, unit tests, sensitive-logging checks, and component-security checks pass after the Wages, Payments, invoice, and Expenses additions.
+- All app code, backlog, records, and documentation changes remain local; nothing was uploaded to GitHub.
 
 ## 2026-07-17
 
