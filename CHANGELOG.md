@@ -1,4 +1,32 @@
-# Changelog
+Changelog
+
+## 2026-07-19
+
+### Modular architecture and analytics
+
+- Split the application into Home, Personal, Business, Calculations, Taxes, Domain, UI, Entitlements, and Improvement modules while retaining a thin Android coordinator for persistence and navigation.
+- Added the shared Improvement library for Lean, Six Sigma, and Theory of Constraints reference material, formulas, evidence-ranked method selection, and Business Suite integration.
+- Tightened Six Sigma validation and zero-defect semantics, preserved BigDecimal precision, separated ToC constraint load from productive utilization, and retained compatible method IDs.
+- Added a Windows-first local desktop foundation with Home, Personal, Business, Taxes, Archives, and Settings areas.
+
+### Business Suite
+
+- Added Rough Estimate as a top-level Business action using only the user's own completed-job history; no generic trade assumptions are imported.
+- Added completed-job estimating evidence for job type, size, roof pitch, valleys, material requirements, actual material consumption, waste, labor, revenue, and profit.
+- Connected Job Profitability and Business Statistics to the shared Improvement library while preserving the distinction between observed evidence and inferred causes.
+
+### Work tracking and income routing
+
+- Added punch-out tip capture with separate Cash Tips and Card Tips fields for in-app and widget-driven punch-out flows.
+- Corrected Android back handling so it navigates within the app before closing the activity.
+- Added persistent additional net-pay routing for split direct deposits, with named percentage-of-net or fixed-amount destinations such as USAA and IRA.
+- Kept the existing Savings allocation calculated from net pay, kept retirement contributions calculated from gross pay with configurable pre-tax/post-tax treatment, and excluded all net-pay routes from checking/budgetable income.
+- Added calculation coverage proving that 61% payroll take-home with 20% total net-pay routing leaves 48.8% of gross available in checking.
+
+### Verification
+
+- Passed Android unit tests, resource and Kotlin compilation, component-security checks, sensitive-logging checks, and debug APK assembly after the routing changes.
+- Installed the updated debug APK successfully as an in-place update on the connected Pixel 7 Pro while preserving app data.
 
 ## 2026-07-18
 
